@@ -1,7 +1,7 @@
 const router = require("express").Router();
-const { getHomeController, getAbc } = require("../controllers/homeController");
+const { getHomepage, getAbc } = require("../controllers/homeController");
 
-router.get("/", getHomeController);
+router.get("/", getHomepage);
 
 router.get("/abc", getAbc);
 

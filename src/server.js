@@ -14,12 +14,6 @@ viewEngineConfig(app);
 // Khai bao route
 app.use("/", webRouter);
 
-// Get data in database <=> simple query
-connection.query("SELECT * FROM users", function (err, result, fields) {
-  console.log(result);
-  console.log(fields);
-});
-
 app.listen(port, hostname, () => {
   console.log(`Example app listening on port ${port}`);
 });
