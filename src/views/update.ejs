@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="/">Home</a>
+      <a href="/create-user">Create user</a>
+    </div>
+
+    <div class="form-add-user">
+      <form action="/update-user" method="POST">
+        <fieldset>
+          <legend class="form-add-new-title">Update user</legend>
+          <div class="input-group">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value="<%= currentUser.email %>"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="name">Name: </label>
+
+            <input
+              type="text"
+              name="name"
+              id="name"
+              value="<%= currentUser.name %>"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="city">City: </label>
+            <input
+              type="text"
+              name="city"
+              id="city"
+              value="<%= currentUser.city %>"
+            />
+          </div>
+
+          <div>
+            <button class="btn-add-user" type="submit">Update</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

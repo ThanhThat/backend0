@@ -32,3 +32,86 @@ body {
   background-color: #04aa6d;
   color: white;
 }
+
+/* form add new user */
+.form-add-user {
+  width: 500px;
+  margin: 50px auto 0;
+}
+
+.form-add-user form {
+  width: inherit;
+}
+
+.form-add-new-title {
+  margin-left: 20px;
+  font-size: 26px;
+}
+
+.form-add-user fieldset {
+  padding: 8px;
+}
+
+.input-group {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-group label {
+  min-width: 70px;
+  display: inline-block;
+}
+
+.input-group input {
+  padding: 4px 6px;
+  font-size: 16px;
+  flex: 1;
+}
+
+.input-group input:focus {
+  outline: none;
+}
+
+.btn-add-user {
+  padding: 8px 12px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: ease 0.25s;
+  border: none;
+  background-color: #04aa6d;
+  border-radius: 10px;
+}
+
+.btn-add-user:hover {
+  background-color: rebeccapurple;
+}
+
+.w3-table-all tr:hover {
+  transition: all 0.25s;
+  background-color: #ccc;
+}
+
+.btn-update-user,
+.btn-delete-user {
+  padding: 4px 8px;
+  display: inline-block;
+  text-decoration: none;
+  border: 1px solid black;
+  margin-right: 4px;
+  border-radius: 6px;
+  transition: all 0.25s;
+}
+
+.btn-update-user:hover,
+.btn-delete-user:hover {
+  opacity: 0.6;
+}
+
+.btn-delete-user {
+  background-color: red;
+}
+
+.btn-update-user {
+  background-color: rgb(26, 255, 0);
+}
