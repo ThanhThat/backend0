@@ -28,12 +28,16 @@
         <tr>
           <td><%= user.id %></td>
           <td><%= user.email %></td>
-          <td><%= user.name %>></td>
+          <td><%= user.name %></td>
           <td><%= user.city %></td>
-          <td>
+          <td style="display: flex">
             <a class="btn-update-user" href="/update-user/<%= user.id %>"
               >Edit</a
-            ><a class="btn-delete-user" href="/delete-user">Delete</a>
+            >
+            <!-- <a class="btn-delete-user" href="/delete-user">Delete</a> -->
+            <form action="/delete/<%= user.id %>" method="get">
+              <button class="btn-delete-user">Delete</button>
+            </form>
           </td>
         </tr>
         <% }) %>

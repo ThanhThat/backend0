@@ -101,6 +101,7 @@ body {
   margin-right: 4px;
   border-radius: 6px;
   transition: all 0.25s;
+  cursor: pointer;
 }
 
 .btn-update-user:hover,

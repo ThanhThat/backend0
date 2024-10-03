@@ -2,7 +2,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Delete user</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
@@ -13,42 +13,23 @@
     </div>
 
     <div class="form-add-user">
-      <form action="/update-user/<%= currentUser.id %>" method="POST">
+      <form action="/delete/<%= currentUser.id %>" method="post">
         <fieldset>
-          <legend class="form-add-new-title">Update user</legend>
+          <legend class="form-add-new-title">Delete user</legend>
           <div class="input-group">
+            <p>Do you want to delete this user?</p>
             <label for="email">Email: </label>
             <input
               type="email"
               name="email"
               id="email"
               value="<%= currentUser.email %>"
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="name">Name: </label>
-
-            <input
-              type="text"
-              name="name"
-              id="name"
-              value="<%= currentUser.name %>"
-            />
-          </div>
-
-          <div class="input-group">
-            <label for="city">City: </label>
-            <input
-              type="text"
-              name="city"
-              id="city"
-              value="<%= currentUser.city %>"
+              disabled
             />
           </div>
 
           <div>
-            <button class="btn-add-user" type="submit">Update</button>
+            <button class="btn-add-user" type="submit">Delete</button>
           </div>
         </fieldset>
       </form>
